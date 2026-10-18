@@ -1,0 +1,8 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+
+# Variables con datos personales (se reparte terraform.tfvars.example)
+terraform.tfvars

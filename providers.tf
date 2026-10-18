@@ -4,7 +4,7 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = ">= 5.0"
+      version = "~> 6.0"
     }
   }
 }
@@ -28,9 +28,6 @@ provider "aws" {
 
   endpoints {
     s3  = var.usar_floci ? local.floci : null
-    ec2 = var.usar_floci ? local.floci : null
-    rds = var.usar_floci ? local.floci : null
     sts = var.usar_floci ? local.floci : null
-    iam = var.usar_floci ? local.floci : null
   }
 }
