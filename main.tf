@@ -15,6 +15,8 @@ resource "aws_s3_bucket" "datos" {
 }
 
 # Versionado del bucket de datos: complétalo.
+# El versionado permite mantener varias versiones de un mismo objeto en el bucket.
+# Mediante este ejemplo vemos cómo podemos referenciar un recurso desde otro, usando su nombre local (datos) y el atributo id.
 resource "aws_s3_bucket_versioning" "datos" {
   bucket = ___ # referencia al id del bucket "datos"
 
