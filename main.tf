@@ -21,7 +21,7 @@ resource "aws_s3_bucket_versioning" "datos" {
   bucket = ___ # referencia al id del bucket "datos"
 
   versioning_configuration {
-    status = ___ # "Enabled" o "Suspended"
+    status = ___ # "Enabled" o "Disabled"
   }
 }
 
